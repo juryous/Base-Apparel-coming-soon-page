@@ -12,7 +12,7 @@ body {
     width: 1440px;
     max-width: 100%;
     margin: 0 auto;
-    background-color: lightgray;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .flex {
@@ -50,8 +50,9 @@ h2 {
 }
 
 h1 {
-    font-weight: 300;
     margin-top: 135px;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
 }
 
 h2 {
@@ -59,50 +60,67 @@ h2 {
 }
 
 p {
-    width: 430px;
-    font-size: 16px;
-    line-height: 28px;
+    width: 440px;
     margin: 25px 0;
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
 }
 
 .form {
     position: relative;
-    width: 450px;
+    width: 460px;
 }
 
 #email {
-    width: 440px;
+    width: 460px;
     height: 60px;
-    border: 2px solid hsl(0, 93%, 68%);
+    border: 2px solid hsl(0, 23%, 82%);
     border-radius: 30px;
     margin-top: 15px;
     padding-left: 32px;
 }
 
 #email::placeholder {
+    color: hsl(0, 23%, 82%);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    font-weight: 600;
 }
 
 #error {
     position: absolute;
     top: 33px;
-    right: 130px;
+    right: 117px;
+}
+
+#error-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin:7px 0 0 34px;
+    color: hsl(0, 74%, 74%);
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .btn {
     position: absolute;
-    right: 9px;
+    right: 1px;
     top: 15px;
     width: 100px;
     height: 60px;
     cursor: pointer;
     border: none;
     border-radius: 30px;
-    background-color: hsl(0, 36%, 70%);
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0 5px 22px 1px hsl(0, 80%, 86%);
 }
 
 .btn:hover {
+    background: none;
     background-color: hsl(0, 80%, 86%);
-    box-shadow: 0px 10px 10px 5px hsl(0, 53%, 88%);
+    box-shadow: 0 12px 35px hsl(0, 74%, 74%);
 }
