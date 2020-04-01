@@ -46,7 +46,6 @@ h2 {
     font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    line-height: 1.1em;
 }
 
 h1 {
@@ -68,18 +67,22 @@ p {
     line-height: 28px;
 }
 
-.form {
+form {
     position: relative;
     width: 460px;
 }
 
-#email {
+input {
     width: 460px;
     height: 60px;
     border: 2px solid hsl(0, 23%, 82%);
     border-radius: 30px;
-    margin-top: 15px;
+    margin: 15px 0;
     padding-left: 32px;
+}
+
+form.error #email {
+    border: 2px solid hsl(0, 93%, 68%);
 }
 
 #email::placeholder {
@@ -89,28 +92,34 @@ p {
     font-weight: 600;
 }
 
-#error {
+.error-img {
     position: absolute;
     top: 33px;
     right: 117px;
+    display: none;
 }
 
-#error-text {
+form.error .error-img {
+    display: block;
+}
+
+small {
     font-size: 14px;
     font-weight: 600;
-    margin:7px 0 0 34px;
-    color: hsl(0, 74%, 74%);
+    margin-left: 34px;
+    color: hsl(0, 93%, 68%);
+    display: none;
 }
 
-.hidden {
-    visibility: hidden;
+form.error small {
+    display: block;
 }
 
 .btn {
     position: absolute;
-    right: 1px;
+    right: -1px;
     top: 15px;
-    width: 100px;
+    width: 102px;
     height: 60px;
     cursor: pointer;
     border: none;
@@ -122,5 +131,5 @@ p {
 .btn:hover {
     background: none;
     background-color: hsl(0, 80%, 86%);
-    box-shadow: 0 12px 35px hsl(0, 74%, 74%);
+    box-shadow: 0 10px 35px hsl(0, 74%, 74%);
 }
