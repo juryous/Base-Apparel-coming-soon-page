@@ -6,6 +6,7 @@ form.addEventListener('submit', e => {
     const emailValue = email.value;
     if (!validEmail(emailValue)) {
         form.classList.add('error');
+        setTimeout(() => form.classList.remove('error'), 2500);
     } else {
         form.classList.remove('error');
     }

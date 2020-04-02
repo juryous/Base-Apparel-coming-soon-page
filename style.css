@@ -10,14 +10,13 @@ body {
 
 .container {
     width: 1440px;
-    max-width: 100%;
     margin: 0 auto;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .logo {
@@ -25,7 +24,7 @@ body {
 }
 
 .left {
-    width: 58%;
+    width: 60%;
     padding-left: 160px;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
@@ -40,25 +39,22 @@ body {
     max-width: 100%;
 }
 
-h1,
-h2 {
+h1 {
     width: 430px;
     font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 1rem;
-}
-
-h1 {
     margin-top: 135px;
-    color: hsl(0, 36%, 70%);
     font-weight: 300;
+    color: hsl(0, 36%, 70%);
 }
 
-h2 {
+span {
+    color: black;
     font-weight: 600;
 }
 
-p {
+.long-copy {
     width: 440px;
     margin: 25px 0;
     color: hsl(0, 36%, 70%);
@@ -69,11 +65,11 @@ p {
 
 form {
     position: relative;
-    width: 460px;
+    width: 445px;
 }
 
 input {
-    width: 460px;
+    width: 445px;
     height: 60px;
     border: 2px solid hsl(0, 23%, 82%);
     border-radius: 30px;
@@ -103,7 +99,7 @@ form.error .error-img {
     display: block;
 }
 
-small {
+.err-text {
     font-size: 14px;
     font-weight: 600;
     margin-left: 34px;
@@ -111,7 +107,7 @@ small {
     display: none;
 }
 
-form.error small {
+form.error .err-text {
     display: block;
 }
 
@@ -126,6 +122,7 @@ form.error small {
     border-radius: 30px;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     box-shadow: 0 5px 22px 1px hsl(0, 80%, 86%);
+    transition: box-shadow 400ms;
 }
 
 .btn:hover {

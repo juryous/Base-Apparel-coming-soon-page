@@ -18,20 +18,20 @@
 
   <div class="container flex">
     <div class="left">
-      <img class="logo" src="./images/logo.svg" alt="Base Apparel logo">
+        <img class="logo" src="./images/logo.svg" alt="Base Apparel logo">
 
-      <h1>We're</h1>
-      <h2>coming soon</h2>
+        <h1>We're <span>coming soon</span></h1>
+        <h2></h2>
 
-      <p>Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <p class="long-copy">Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <form id="email-form">
-        <input id="email" type="email" name="email" placeholder="Email Adress">
-        <img class="error-img" src="./images/icon-error.svg" alt="error icon">
-        <button class="btn"><img src="./images/icon-arrow.svg" alt="arrow"></button>
-        <small>Please provide a valid email</small>
-      </form>
+        <form id="email-form" novalidate>
+          <input id="email" type="email" name="email" placeholder="Email Adress">
+          <img class="error-img" src="./images/icon-error.svg" alt="error icon">
+          <button class="btn"><img src="./images/icon-arrow.svg" alt="arrow"></button>
+          <p class="err-text">Please provide a valid email</p>
+        </form>
     </div>
     <div class="right">
       <img id="hero-desktop" src="./images/hero-desktop.jpg" alt="Picture of a woman">
